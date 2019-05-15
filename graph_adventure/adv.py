@@ -48,6 +48,7 @@ for room in world.rooms:
                 path_copy = path.copy()
                 path_copy.append(n)
                 q.enqueue(path_copy)
+    
 
 # FILL THIS IN
 traversalPath = ['n', 's']
