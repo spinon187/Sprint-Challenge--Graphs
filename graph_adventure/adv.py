@@ -72,8 +72,6 @@ def backtrack():
 
 def traverse(back_dir=None, back_id=None):
     current = player.currentRoom.id
-    print(f'entered {current}')
-
     if not current in graph:
         graph[current] = {}
         for exit in player.currentRoom.getExits():
@@ -84,7 +82,6 @@ def traverse(back_dir=None, back_id=None):
         elif '?' not in graph[current].values():
             backtrack()
     if current in open_branches:
-        print(open_branches)
         if 'n' in graph[current] and graph[current]['n'] == '?':
             previous = current
             traversalPath.append('n')
