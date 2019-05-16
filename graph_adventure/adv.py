@@ -29,23 +29,6 @@ graph = {}
 open_branches = set()
 
 def backtrack():
-    # current = player.currentRoom.id
-    # for i in reversed(traversalPath):
-    #     if current not in open_branches:
-    #         if i == 'n':
-    #             traversalPath.append('s')
-    #             player.travel('s')
-    #         elif i == 's':
-    #             traversalPath.append('n')
-    #             player.travel('n')
-    #         elif i == 'e':
-    #             traversalPath.append('w')
-    #             player.travel('w')
-    #         elif i == 'w':
-    #             traversalPath.append('e')
-    #             player.travel('e')
-    #     else:
-    #         break
     backtracking = True
     while backtracking is True:
         if player.currentRoom.id not in open_branches and len(open_branches) > 0:
